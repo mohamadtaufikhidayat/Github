@@ -16,10 +16,10 @@ public class UploadGithubUjianSoal1 {
 			for(int i=0;i<2;i++) {
 				for(int j=0; j<n;j++) {
 					if(i==0) {
-						array[i][j]=2*j+1;// 1 5 9 13 dst 
+						array[i][j]=4*j+1;// 1 5 9 13 dst 
 					}else {
 						//cara 1
-						array[i][j]=2*n-1-2*j;// 
+						array[i][j]=4*n-3-4*j;// 
 						//cara 2
 						//array[i][j]=array[0][n-1-j];//
 					}
