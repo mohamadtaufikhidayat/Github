@@ -38,9 +38,32 @@ public class UploadGithubUjianSoal2 {
 				}
 			}
 		}
-		System.out.println("hasil ini adalah hasil penjumlahan dari "+"kacamata ke "+(q+1)+" harga "+b+" dengan baju ke "+(p+1)+" harga "+m);
-		System.out.println(a);
 		
+		int amax=uangAndi;
+		for(int i=0;i<3;i++) {//mencari nilai maksimum diatas uang andi
+			for(int j=0;j<3;j++) {
+				if(amax<=arraySum[i][j]&&arraySum[i][j]>uangAndi) {
+					amax=arraySum[i][j];
+				}
+			}
+		}
+		
+		int amin=amax;
+		for(int i=0;i<3;i++) {//mencari nilai minimum diatas uang andi
+			for(int j=0;j<3;j++) {
+				if(amin>=arraySum[i][j]&&arraySum[i][j]>uangAndi) {
+					amin=arraySum[i][j];
+				}
+			}
+		}
+		
+		if(a<=uangAndi&&a>0) {
+			System.out.println("hasil ini adalah hasil penjumlahan dari "+"kacamata ke "+(q+1)+" harga "+b+" dengan baju ke "+(p+1)+" harga "+m);
+			System.out.println(a);
+		}else {
+			System.out.println("Dana tidak mencukupi minimal dana adalah");
+			System.out.println(amin);
+		}
 	}
 	public static void main(String[] args) {
 		UploadGithubUjianSoal2 run =new UploadGithubUjianSoal2();
