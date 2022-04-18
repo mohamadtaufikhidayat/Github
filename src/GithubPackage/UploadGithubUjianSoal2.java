@@ -57,7 +57,7 @@ public class UploadGithubUjianSoal2 {
 			}
 		}
 		
-		if(a<=uangAndi&&a>0) {
+		if(a<=uangAndi&&a>=0) {
 			System.out.println("hasil ini adalah hasil penjumlahan dari "+"kacamata ke "+(q+1)+" harga "+b+" dengan baju ke "+(p+1)+" harga "+m);
 			System.out.println(a);
 		}else {
